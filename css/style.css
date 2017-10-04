@@ -1,0 +1,134 @@
+/*
+ * 2048 Game
+ * An html5 implementation of Gabriele Cirulli's 2048 game
+ * Programmed in 2016 by David Crespo
+ */
+/* 
+    Created on : Dec 15, 2016, 1:53:40 PM
+    Author     : dcrespo
+*/
+
+* {
+    margin: 0 0;
+}
+
+body {
+    font-family: Arial;
+    font-weight: bold;
+    background: #444;
+}
+
+#gameframe {
+    background: #999;
+    width: 640px;
+    height: 640px;
+}
+
+.bgtile {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+}
+
+.bgtile2 {
+    position: absolute;
+    background: #AAA;
+    border-radius: 10px;
+    width: 84%;
+    height: 84%;
+    margin: 8%
+}
+
+.tile {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+}
+
+.tile2 {
+    position: absolute;
+    background: #FFF;
+    border-radius: 10px;
+    width: 84%;
+    height: 84%;
+    font-size: 24px;
+    text-align: center;
+    margin: 8%
+}
+
+.num2 { color: #000; background-color: #EEE; }
+.num4 { color: #000; background-color: #EEC; }
+.num8 { color: #000; background-color: #EB8; }
+.num16 { color: #000; background-color: #E97; }
+.num32 { color: #000; background-color: #E86; }
+.num64 { color: #000; background-color: #E42; }
+.num128 { color: #000; background-color: #EE2; }
+.num256 { color: #000; background-color: #CC2; }
+.num512 { color: #000; background-color: #AA2; }
+.num1024 { color: #FFF; background-color: #882; }
+.num2048 { color: #FFF; background-color: #662; }
+.num4096 { color: #FFF; background-color: #442; }
+.num8192 { color: #FFF; background-color: #222; }
+.num16384 { color: #FFF; background-color: #000; }
+.num32768 { color: #FFF; background-color: #60C; }
+.num65536 { color: #FFF; background-color: #86F; }
+
+#scoreframe {
+    margin-left:2%;
+    float:left;
+    background: #CCC;
+    width: 50%;
+    height: 70px;
+    font-size: 30px;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+#scorelabel {
+    display: inline-block;
+    width: 120px;
+    margin: 5px;
+    line-height: 60px;
+    text-align: center;
+}
+
+#scorevalue {
+    display: inline-block;
+    width: 160px;
+    margin-top: 20px;
+    background: #FFF;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#gameover {
+    position: absolute;
+    background: #C20;
+    color: #FE4;
+    width: 640px;
+    height: 60px;
+    font-size: 30px;
+    border-radius: 10px;
+    line-height: 60px;
+    text-align: center;
+    z-index: 5;
+}
+
+#restart {
+    margin-right:2%;
+    float:right;
+    background: #08A;
+    color: #BFE;
+    width: 40%;
+    height: 80px;
+    font-size: 30px;
+    border-radius: 10px;
+    line-height: 80px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.infopanel {
+    width: 640px;
+    margin-top: 20px;
+}
